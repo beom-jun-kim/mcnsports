@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
 :root {
   /* color */
   --primary-color: #69c6b9;
@@ -7,11 +9,12 @@
   /* font */
   --big-font: 2.5vw;
   --normal-font: 20px;
-  --small-font: 15px;
+  --small-font: 14px;
   --title-font: 40px;
   --bold-font: 700;
   --sec-font-color: #a7a7a7;
 }
+
 
 html {
   overflow-x: hidden;
@@ -21,7 +24,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans CJK KR", sans-serif;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
   color: #2e2e2e;
 }
 
@@ -41,7 +44,6 @@ img {
 .inner {
   max-width: 1800px;
   margin: 0 auto;
-  /* background: sandybrown; */
 }
 
 section {
@@ -60,11 +62,15 @@ section#bestItem {
 }
 
 /* header */
+header {
+  height: 78.91px;
+  line-height: 78.91px;
+}
+
 header .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
 }
 
 header .logo {
@@ -76,16 +82,91 @@ header .gnb {
   display: flex;
 }
 
+header .gnb li {
+  cursor: pointer;
+}
+
+/* ================================== header sub cate visibility ============================= */
+header .gnb li .secWrapBox {
+  visibility: hidden;
+  opacity: 0;
+}
+
+header .gnb li:hover .secWrapBox {
+  opacity: 1;
+  visibility: visible;
+}
+/* ================================== header sub cate visibility ============================= */
+
 header .gnb li,
 header .userBox > div {
-  margin-right: 20px;
+  padding-right: 30px;
   white-space: nowrap;
 }
 
 header .gnb li:last-child,
 header .userBox > div:last-child,
 #main .mainWrap .slick-dots li:last-child button {
-  margin-right: 0;
+  padding-right: 0;
+}
+
+header .firstCate .secWrapBox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  top: 78.91px;
+  left: 0;
+  background: #fff;
+  border-top: 3px solid #2e2e2e;
+  position: absolute;
+  z-index: 20;  
+}
+
+header .secCate {
+  width: 220px;
+  padding-top: 1.5rem;
+  line-height: 30px;
+  text-align: center;
+  /* border: 1px solid var(--sec-font-color);
+  border-top: none;
+  border-bottom: none; */
+}
+
+header .secCate li {
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+}
+
+header .secCate li:first-child {
+  font-weight: var(--bold-font);
+}
+
+header .secCate li:nth-child(2) {
+  margin-top: 10px;
+}
+
+header .secCate li:nth-child(n+2) {
+  font-size: var(--small-font);
+}
+
+/* header .verticalBox {
+  border-right: 1px solid var(--sec-font-color);
+  border-top: none;
+  border-bottom: none;
+} */
+
+/* header .verticalBox:nth-child(3) {
+  border-right: none;
+}
+
+header .verticalBox .secCate {
+  border: none;
+} */
+
+header .modelImg {
+  margin-top: 1.5rem;
 }
 
 header .userBox {
