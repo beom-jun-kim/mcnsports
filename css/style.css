@@ -94,7 +94,7 @@ header .userBox {
 }
 
 header .userBox input {
-  padding: 10px 10px 10px 15px;
+  padding: 10px 10px 10px 20px;
   background: url("../img/search.png") no-repeat center/cover;
   background-size: 18px;
   background-position: 90% 10px;
@@ -102,6 +102,7 @@ header .userBox input {
   border: none;
   outline: none;
   border-radius: 20px;
+  color: #fff;
 }
 
 header .userBox input::placeholder {
@@ -350,6 +351,7 @@ header .userBox .userIcon {
   bottom: 17%;
   left: 10.4%;
   width: 200px;
+  height: 50px;
 }
 
 #arrival .slick-dots li {
@@ -358,6 +360,7 @@ header .userBox .userIcon {
   position: relative;
   cursor: pointer;
   margin: 0 auto;
+  transition: 300ms;
 }
 
 #arrival .slick-dots li button {
@@ -370,6 +373,11 @@ header .userBox .userIcon {
   outline: none;
   background: #2e2e2e;
   cursor: pointer;
+  transition: 300ms;
+}
+
+#arrival .slick-dots li button:before {
+  content: "0";
 }
 
 #arrival .slick-dots .slick-active {
@@ -378,7 +386,6 @@ header .userBox .userIcon {
 }
 
 #arrival .slick-dots .slick-active button {
-  transition: 300ms;
   font-size: var(--normal-font);
   font-weight: var(--bold-font);
   color: #fff;
@@ -387,10 +394,6 @@ header .userBox .userIcon {
   border: none;
   outline: none;
   background: var(--primary-color);
-}
-
-#arrival .slick-dots .slick-active button:before {
-  content: "0";
 }
 
 /* sns */
@@ -422,4 +425,209 @@ header .userBox .userIcon {
   padding: 1px;
   width: 25%;
   font-size: 0;
+}
+
+#sns .instarBox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  float: right;
+}
+
+/* etc */
+#etc .etcWrap {
+  display: flex;
+}
+
+#etc .box {
+  width: 33.3333%;
+  font-size: 0;
+  position: relative;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#etc .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.432);
+  width: 100%;
+  height: 100%;
+}
+
+#etc .box:before {
+  top: 0;
+}
+
+#etc .box:after {
+  bottom: 0;
+}
+
+#etc .box:before,
+#etc .box:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  background: #fff;
+  transition: 0.5s;
+}
+
+#etc .box:hover:before {
+  width: 2px;
+  height: 100%;
+}
+
+#etc .box:hover:after {
+  width: 100%;
+  height: 2px;
+}
+
+#etc .box .desc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--normal-font);
+  line-height: 7.208333333333334vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#etc .box .desc:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: #fff;
+  transition: 0.5s;
+}
+
+#etc .box .desc:hover:after {
+  width: 2px;
+  height: 100%;
+}
+
+#etc .box .descBox {
+  width: 70%;
+  margin: 0 auto;
+}
+
+#etc .box .desc h4,
+#etc .box .desc p {
+  color: #fff;
+}
+
+#etc .box .desc p {
+  font-weight: 300;
+  line-height: normal;
+  word-break: keep-all;
+}
+
+/* footer */
+footer {
+  height: 800px;
+  padding: 100px 0;
+  background: #181818;
+  font-size: var(--small-font);
+}
+
+footer .onBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .onBoxWrap {
+  width: 32%;
+}
+
+footer .onBoxWrap .flexBox {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5.208333333333334vw;
+}
+
+footer .onBoxWrap .onBoxTitle,
+footer .contactNum {
+  font-size: var(--normal-font);
+}
+
+footer .onBoxWrap ul,
+footer .companyInfo p {
+  line-height: 35px;
+}
+
+footer .onBoxTitle,
+footer .snsTitle {
+  border-bottom: 2px solid #fff;
+  padding: 1rem 0;
+}
+
+footer .onBoxTitle h3,
+footer .snsTitle h3 {
+  color: #fff;
+}
+
+footer ul li,
+footer .snsBox li i,
+footer .companyInfo p {
+  color: var(--sec-font-color);
+}
+
+footer .leftBox,
+footer .rightBox,
+footer .snsBox {
+  padding: 1rem 0;
+}
+
+footer .underBoxWrap {
+  display: flex;
+}
+
+footer .companyInfo {
+  text-align: center;
+}
+
+footer .companyInfo {
+  flex: 6.5;
+}
+
+footer .sns {
+  flex: 3;
+  font-size: var(--normal-font);
+}
+
+footer .snsBox {
+  display: flex;
+}
+
+footer .snsBox li {
+  padding-right: 10px;
+}
+
+footer p.copyright {
+  margin-top: 50px;
+  color: #494949;
+}
+
+footer .post {
+  display: inline-block;
+  background: sandybrown;
+  font-size: 0;
+}
+
+footer .postWrap {
+  display: flex;
+}
+
+footer .empty {
+  width: 34.1%;
+  height: 50px;
 }

@@ -13,11 +13,10 @@ $(document).ready(function(){
     $(".arrivalSlide").slick({
         dots: true,
         infinite: true,
-        speed: 300,
+        speed: 200,
         cssEase: "linear",
         nextArrow:false,
         prevArrow:false,
-        fade:true,
     });
 
     var swiper = new Swiper(".mySwiper", {
