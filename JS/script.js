@@ -16,7 +16,8 @@ $(document).ready(function(){
         speed: 300,
         cssEase: "linear",
         nextArrow:false,
-        prevArrow:false
+        prevArrow:false,
+        fade:true,
     });
 
     var swiper = new Swiper(".mySwiper", {
