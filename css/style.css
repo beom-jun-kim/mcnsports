@@ -95,7 +95,7 @@ header .userBox {
 
 header .userBox input {
   padding: 10px 10px 10px 15px;
-  background: url("/img/search.png") no-repeat center/cover;
+  background: url("../img/search.png") no-repeat center/cover;
   background-size: 18px;
   background-position: 90% 10px;
   background-color: var(--primary-color);
@@ -122,7 +122,7 @@ header .userBox .userIcon {
   font-size: 0;
   width: 2.2395833333333335vw;
   height: 2.2395833333333335vw;
-  background: url("/img/main_slide_arrow.png") no-repeat center/cover;
+  background: url("../img/main_slide_arrow.png") no-repeat center/cover;
   border: none;
   z-index: 5;
   top: 71.5%;
@@ -288,7 +288,7 @@ header .userBox .userIcon {
 #bestItem .swiper-button-prev {
   width: 48px !important;
   height: 48px !important;
-  background: url("/img/best_item_arrow.jpg") no-repeat center/cover;
+  background: url("../img/best_item_arrow.jpg") no-repeat center/cover;
 }
 
 #bestItem .swiper-button-next {
