@@ -55,5 +55,16 @@ $(document).ready(function(){
         }
       });
 
+      $(document).on('mousewheel', function(e){
+        const wheel = e.originalEvent.wheelDelta;
+        const header = $('header');
+
+        if(wheel > 0) {
+          header.removeClass('fixed');
+        } else {
+          header.addClass('fixed');
+        }
+      })
+
 });
 

@@ -71,6 +71,10 @@ header {
   transition: .5s;
 }
 
+header.fixed {
+  top: -100%;
+}
+
 header .logoDarkMode,
 header:hover .logoWhiteMode,
 header .logoWhiteMode.active {
