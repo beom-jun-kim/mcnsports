@@ -343,6 +343,7 @@ header .brand .secCate img {
   left: 0;
   opacity: 0.5;
   border: none;
+  cursor: pointer;
 }
 
 #main .mainWrap .slick-dots .slick-active button {
