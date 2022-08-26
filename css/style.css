@@ -15,7 +15,6 @@
   --sec-font-color: #a7a7a7;
 }
 
-
 html {
   overflow-x: hidden;
 }
@@ -24,7 +23,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
   color: #2e2e2e;
 }
 
@@ -63,9 +62,44 @@ section#bestItem {
 
 /* header */
 header {
-  height: 78.91px;
-  line-height: 78.91px;
+  line-height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  transition: .5s;
 }
+
+header .logoDarkMode,
+header:hover .logoWhiteMode,
+header .logoWhiteMode.active {
+  display: none;
+}
+
+header:hover .logoDarkMode,
+header .logoDarkMode.active {
+  display: block;
+}
+
+header:hover,
+header.active {
+  background-color: #fff;
+}
+
+header .firstCate a,
+header .userIcon i {
+  color: #fff;
+  transition: .5s;
+}
+
+header:hover .firstCate a,
+header .firstCate a.active,
+header:hover .userIcon i,
+header .userIcon i.active {
+  color: #2e2e2e;
+}
+
 
 header .inner {
   display: flex;
@@ -74,8 +108,9 @@ header .inner {
 }
 
 header .logo {
-  width: 170px;
-  height: 46.91px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
 
 header .gnb {
@@ -84,6 +119,10 @@ header .gnb {
 
 header .gnb li {
   cursor: pointer;
+}
+
+header .fontWeight {
+  font-weight: var(--bold-font);
 }
 
 /* ================================== header sub cate visibility ============================= */
@@ -115,12 +154,12 @@ header .firstCate .secWrapBox {
   justify-content: center;
   width: 100%;
   height: 400px;
-  top: 78.91px;
+  top: 100px;
   left: 0;
   background: #fff;
   border-top: 3px solid #2e2e2e;
   position: absolute;
-  z-index: 20;  
+  z-index: 20;
 }
 
 header .secCate {
@@ -147,7 +186,7 @@ header .secCate li:nth-child(2) {
   margin-top: 10px;
 }
 
-header .secCate li:nth-child(n+2) {
+header .secCate li:nth-child(n + 2) {
   font-size: var(--small-font);
 }
 
@@ -175,15 +214,17 @@ header .userBox {
 }
 
 header .userBox input {
-  padding: 10px 10px 10px 20px;
+  padding: 0 15px 0 20px;
   background: url("../img/search.png") no-repeat center/cover;
-  background-size: 18px;
-  background-position: 90% 10px;
+  background-size: 23px;
+  background-position: 90% 9px;
   background-color: var(--primary-color);
   border: none;
   outline: none;
   border-radius: 20px;
   color: #fff;
+  width: 238px;
+  height: 40px;
 }
 
 header .userBox input::placeholder {
@@ -191,7 +232,20 @@ header .userBox input::placeholder {
 }
 
 header .userBox .userIcon {
-  font-size: var(--normal-font);
+  font-size: 27px;
+}
+
+header .brand .secCate li:first-child {
+  font-size: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+header .brand .secCate img {
+  vertical-align: middle;
 }
 
 /* main */
@@ -282,25 +336,47 @@ header .userBox .userIcon {
 }
 
 /* keywords */
-#keywords .title {
+#keywords .title,
+#bestItem .title {
   position: relative;
 }
-#keywords .title:before,
-#keywords .title:after {
+
+#keywords .title a,
+#bestItem .title a {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em;
+}
+
+#keywords .title .line:before,
+#keywords .title .line:after,
+#bestItem .title .line:before,
+#bestItem .title .line:after {
   content: "";
   position: absolute;
-  top: 50%;
-  width: 35.729166666666664vw;
   height: 2px;
-  background: #000;
+  background: #111;
+  top: 50%;
 }
 
-#keywords .title:before {
-  left: 5px;
+#keywords .title .line:before,
+#keywords .title .line:after {
+  width: 183.5%;
 }
 
-#keywords .title:after {
-  right: 5px;
+#bestItem .title .line:before,
+#bestItem .title .line:after {
+  width: 244%;
+}
+
+#keywords .title .line:before,
+#bestItem .title .line:before {
+  right: 100%;
+}
+
+#keywords .title .line:after,
+#bestItem .title .line:after {
+  left: 100%;
 }
 
 #keywords .keywordBox {
@@ -318,6 +394,7 @@ header .userBox .userIcon {
   border-radius: 20px;
   padding: 8px 25px;
   margin-right: 15px;
+  /* font-weight: 300; */
 }
 
 #keywords .keywordBox .keyword li:last-child {
@@ -325,28 +402,6 @@ header .userBox .userIcon {
 }
 
 /* best item */
-#bestItem .title {
-  position: relative;
-}
-
-#bestItem .title:before,
-#bestItem .title:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 38.54166666666667vw;
-  height: 2px;
-  background: #000;
-}
-
-#bestItem .title:before {
-  left: 5px;
-}
-
-#bestItem .title:after {
-  right: 5px;
-}
-
 #bestItem .swiper {
   position: relative;
   overflow: visible;

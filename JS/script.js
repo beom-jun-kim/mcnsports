@@ -31,5 +31,29 @@ $(document).ready(function(){
           prevEl: ".swiper-button-prev",
         },
       });
+
+      $(document).scroll(function(){
+        const header = $('header');
+        const $scrollTop =$(window).scrollTop();
+        const headerCate = $('header .firstCate a');
+        const headerIcon = $('header .userIcon i');
+        const headerDarkLogo = $('header .logoDarkMode');
+        const headerWhiteLogo = $('header .logoWhiteMode');
+
+        if($scrollTop > 0) {
+          header.addClass('active');
+          headerCate.addClass('active');
+          headerIcon.addClass('active');
+          headerDarkLogo.addClass('active');
+          headerWhiteLogo.addClass('active');
+        }else {
+          header.removeClass('active');
+          headerCate.removeClass('active');
+          headerIcon.removeClass('active');
+          headerDarkLogo.removeClass('active');
+          headerWhiteLogo.removeClass('active');
+        }
+      });
+
 });
 
