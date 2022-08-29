@@ -66,10 +66,8 @@ $(document).ready(function () {
     let scrolltop_before = 0;
     let scrolltop_after = 0;
     function fn_evt_scroll(e) {
-      // const wheel = e.originalEvent.wheelDelta;
       const header = $("header");
       scrolltop_after = document.documentElement.scrollTop;
-      // if (wheel > 0) {
       if (scrolltop_before > scrolltop_after) {
         header.removeClass("fixed");
       } else {
@@ -77,7 +75,6 @@ $(document).ready(function () {
       }
       scrolltop_before = document.documentElement.scrollTop;
     }
-    // $(document).on("mousewheel", fn_evt_scroll);
     $(window).on("scroll", fn_evt_scroll);
   });
 
@@ -92,10 +89,9 @@ $(document).ready(function () {
   });
 
   $(".searchBox").hide();
-  $(".userIcon .xi-search").click(function(){
+  $(".userIcon .xi-search").click(function () {
     $(".searchBox").stop().slideToggle(300);
   });
-
 
   // top button visible
   const $topBtn = $(".topBtn");
