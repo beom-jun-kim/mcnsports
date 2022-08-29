@@ -471,10 +471,6 @@ header .brand .secCate img {
   padding: 50px 0;
 }
 
-/* ::-webkit-scrollbar {
-  display: none;
-} */
-
 #bestItem .swiper-pagination {
   position: absolute;
   top: 100%;

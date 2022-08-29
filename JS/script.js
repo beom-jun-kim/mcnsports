@@ -4,7 +4,7 @@ $(document).ready(function () {
     dots: true,
     infinite: true,
     speed: 300,
-    // autoplay: true,
+    autoplay: true,
     cssEase: "linear",
     pauseOnHover: false,
     pauseOnFocus: false,
