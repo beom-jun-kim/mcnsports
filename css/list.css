@@ -1,6 +1,55 @@
 @charset "utf-8";
 
-section {
-    height: 100vh;
+header {
+  background: #fff;
 }
 
+main {
+  margin-top: 100px;
+}
+
+section {
+  padding-top: 50px;
+}
+
+/* hot */
+#hotItem .hotImgWrap {
+  display: flex;
+}
+
+#hotItem .hotImgWrap .hotBox {
+    width: 50%;
+}
+
+#hotItem .minTitle h6 {
+    color: var(--primary-color);
+    font-weight: var(--bold-font);
+    font-size: var(--normal-font);
+}
+
+#hotItem .desc{
+    font-weight: var(--bold-font);
+    margin: 20px 0;
+    font-size: var(--title-font);
+    letter-spacing: -.5px;
+    line-height: 50px;
+}
+
+#hotItem .buyBtnWrap {
+    text-align: center;
+}
+
+#hotItem .buyBtnWrap h6 {
+    font-size: var(--normal-font);
+    margin: 10px 0 5px;
+}
+
+#hotItem .buyBtnWrap .buyBtn {
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 20px;
+    background: #2e2e2e;
+    color: #fff;
+    letter-spacing: .5px;
+    font-weight: 300;
+}

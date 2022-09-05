@@ -1,3 +1,4 @@
+// header sub category event
 $(document).ready(function () {
   $(".secWrapBox").hide();
   $("header .firstCate").mouseover(function () {
