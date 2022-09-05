@@ -42,6 +42,7 @@ section {
 #hotItem .buyBtnWrap h6 {
     font-size: var(--normal-font);
     margin: 10px 0 5px;
+    font-weight: 300;
 }
 
 #hotItem .buyBtnWrap .buyBtn {
@@ -52,4 +53,10 @@ section {
     color: #fff;
     letter-spacing: .5px;
     font-weight: 300;
+}
+
+/* new */
+#new .newSlider .imgBoxWrap {
+    display: flex;
+    justify-content: space-between;
 }
