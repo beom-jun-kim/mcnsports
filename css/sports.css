@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+header {
+  background: #fff;
+}
+
+main {
+  padding-top: 150px;
+  text-align: center;
+}
+
+#wear .imgDesc {
+    margin-bottom: 100px;
+}
+
+#wear .bigTitle {
+    margin-top: 20px;
+    font-size: var(--title-font);
+    letter-spacing: -1px;
+}
+
+#wear .minTitle {
+    font-size: var(--normal-font);
+    font-weight: 300;
+    margin: 10px 0 50px;
+}
+
+#wear .imgDesc a {
+    border: 2px solid #000;
+    padding: 10px 40px;
+}
