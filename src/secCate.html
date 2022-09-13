@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/list.css" />
+    <link rel="stylesheet" href="../css/secCate.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link
       rel="stylesheet"
@@ -14,24 +14,12 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
-
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <title>1차 카테고리 남자</title>
+    <title>2차 카테고리 페이지</title>
   </head>
   <body>
     <!-- header -->
@@ -90,7 +78,9 @@
               </div>
             </li>
             <li class="firstCate">
-              <div class="firstCateText"><a href="../src/women.html">여성</a></div>
+              <div class="firstCateText">
+                <a href="../src/women.html">여성</a>
+              </div>
               <div class="secWrapBox">
                 <ul class="secCate">
                   <li>Women</li>
@@ -134,7 +124,7 @@
               </div>
             </li>
             <li class="firstCate">
-              <div class="firstCateText"><a href="../src/list.html">키즈</a></div>
+              <div class="firstCateText"><a href="#">키즈</a></div>
               <div class="secWrapBox">
                 <ul class="secCate">
                   <li>Kids</li>
@@ -154,7 +144,9 @@
               </div>
             </li>
             <li class="firstCate">
-              <div class="firstCateText"><a href="../src/sports.html">스포츠</a></div>
+              <div class="firstCateText">
+                <a href="../src/sports.html">스포츠</a>
+              </div>
               <div class="secWrapBox">
                 <ul class="secCate">
                   <li>사이클</li>
@@ -193,7 +185,10 @@
                   <li>레깅스</li>
                 </ul>
                 <div class="modelImg">
-                  <img src="../img/modelImg_sports.jpg" alt="스포츠모델이미지" />
+                  <img
+                    src="../img/modelImg_sports.jpg"
+                    alt="스포츠모델이미지"
+                  />
                 </div>
               </div>
             </li>
@@ -226,286 +221,230 @@
       </div>
     </header>
 
-    <!-- hot -->
     <main>
-      <section id="hotItem">
-        <div class="inner">
-          <div class="title">
-            <div class="minTitle">
-              <h6>HOT</h6>
+      <div class="inner">
+        <aside>
+          <div class="filterBox">
+            <div class="title">
+              <h4>필터검색</h4>
+              <i class="xi-filter"></i>
             </div>
-            <div class="desc">
-              <p>요즘 핫한 상품들을<br />모아보았어요</p>
+            <div class="price box">
+              <div class="title">
+                <h4>가격</h4>
+              </div>
+              <div class="select">
+                <div class="selectBox">
+                  <input type="checkbox" name="price01" id="price01" />
+                  <label for="price01">5~10만원</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="price02" id="price02" />
+                  <label for="price02">5~10만원</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="price03" id="price03" />
+                  <label for="price03">10~20만원</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="price04" id="price04" />
+                  <label for="price04">20~30만원</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="price05" id="price05" />
+                  <label for="price05">30만원 이상</label>
+                </div>
+              </div>
+            </div>
+            <div class="size box">
+              <div class="title">
+                <h4>사이즈</h4>
+              </div>
+              <div class="flexBox">
+                <div class="selectBox">
+                  <input type="checkbox" name="size01" id="size01" />
+                  <label for="size01">ES</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="size02" id="size02" />
+                  <label for="size02">S</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="size03" id="size03" />
+                  <label for="size03">M</label>
+                </div>
+              </div>
+              <div class="flexBox">
+                <div class="selectBox">
+                  <input type="checkbox" name="size04" id="size04" />
+                  <label for="size04">L</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="size05" id="size05" />
+                  <label for="size05">XL</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="size06" id="size06" />
+                  <label for="size06">2XL</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="size07" id="size07" />
+                  <label for="size07">3XL</label>
+                </div>
+              </div>
+            </div>
+            <div class="color box">
+              <div class="title">
+                <h4>컬러</h4>
+              </div>
+              <div class="flexBox">
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#f7a000">
+                             <input type="checkbox" name="chk_color" id="co_#f7a000" class="etc-color orange" value="#f7a000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selectBox">
+                    <div class="ps-chkbox">
+                        <label for="co_#FF0000">
+                             <input type="checkbox" name="chk_color" id="co_#FF0000" class="etc-color red" value="#FF0000">
+                             <span class="text">오렌지</span>
+                        </label>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="function box">
+              <div class="title">
+                <h4>기능</h4>
+              </div>
+              <div class="select">
+                <div class="selectBox">
+                  <input type="checkbox" name="function01" id="function01" />
+                  <label for="function01">방수</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="function02" id="function02" />
+                  <label for="function02">방풍</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="function03" id="function03" />
+                  <label for="function03">냉감</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="function04" id="function04" />
+                  <label for="function04">보온</label>
+                </div>
+                <div class="selectBox">
+                  <input type="checkbox" name="function05" id="function05" />
+                  <label for="function05">자외선 차단</label>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="hotImgWrap">
-            <div class="hotBox">
-              <a href="javascript:void(0)">
-                <div class="hotImg">
-                  <img src="../img/list_page/first_cate_hot01.jpg" alt="인기아이템이미지1" />
-                </div>
-              </a>
-              <div class="buyBtnWrap">
-                <h6>Black Jacket</h6>
-                <a href="javascript:void(0)" class="buyBtn"> 구매하기 </a>
-              </div>
-            </div>
-            <div class="hotBox">
-              <a href="javascript:void(0)">
-                <div class="hotImg">
-                  <img src="../img/list_page/first_cate_hot02.jpg" alt="인기아이템이미지2" />
-                </div>
-              </a>
-              <div class="buyBtnWrap">
-                <h6>Top Inner</h6>
-                <a href="javascript:void(0)" class="buyBtn"> 구매하기 </a>
-              </div>
-            </div>
+        </aside>
+        <section>
+          <div class="listTab">
+            <ul class="listTabNavi">
+              <li><a href="#tab01">전체보기</a></li>
+              <li><a href="#tab02">팬츠 & 타이즈</a></li>
+              <li><a href="#tab03">바람막이 & 자켓</a></li>
+              <li><a href="#tab04">언더레이어</a></li>
+            </ul>
           </div>
-        </div>
-      </section>
-
-      <!-- new -->
-      <section id="new">
-        <div class="inner">
-          <div class="title">
-            <div class="minTitle">
-              <h6>NEW</h6>
-            </div>
-            <div class="desc">
-              <p>트렌디한 스타일로 제작된<br />신상품을 만나보세요</p>
-            </div>
+          <div class="listTabContent">
+            <div id="tab01">content01 content01 content01</div>
+            <div id="tab02">content02 content02 content02</div>
+            <div id="tab03">content03 content03 content03</div>
+            <div id="tab04">content04 content04 content04</div>
           </div>
-          <div class="newSliderWrap">
-            <div class="newSlider">
-              <div>
-                <div class="imgBoxWrap">
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new01.jpg" alt="신상품이미지1" />
-                  </div>
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new02.jpg" alt="신상품이미지2" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="imgBoxWrap">
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new03.jpg" alt="신상품이미지3" />
-                  </div>
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new04.jpg" alt="신상품이미지4" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="imgBoxWrap">
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new05.jpg" alt="신상품이미지5" />
-                  </div>
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new06.jpg" alt="신상품이미지6" />
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div class="imgBoxWrap">
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new07.jpg" alt="신상품이미지7" />
-                  </div>
-                  <div class="imgBox">
-                    <img src="../img/list_page/first_cate_new08.jpg" alt="신상품이미지8" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="cateDivide">
-        <div class="inner">
-          <div class="title">
-            <h6>카테고리별</h6>
-          </div>
-          <div class="cateDivideSliderWrap">
-            <div class="cateDivideSlider">
-              <div>
-                <div class="imgBoxWrap">
-                  <a href="javascript:void(0)">
-                    <div class="imgBox">
-                      <img
-                        src="../img/list_page/first_cate_divide_01.jpg"
-                        alt="탑과 져지"
-                      />
-                    </div>
-                    <div class="name">
-                      <p>탑 & 져지</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div class="imgBoxWrap">
-                  <a href="javascript:void(0)">
-                    <div class="imgBox">
-                      <img
-                        src="../img/list_page/first_cate_divide_02.jpg"
-                        alt="팬츠와 타이즈"
-                      />
-                    </div>
-                    <div class="name">
-                      <p>팬츠 & 타이즈</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div class="imgBoxWrap">
-                  <a href="javascript:void(0)">
-                    <div class="imgBox">
-                      <img
-                        src="../img/list_page/first_cate_divide_03.jpg"
-                        alt="언더레이어"
-                      />
-                    </div>
-                    <div class="name">
-                      <p>언더레이어</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div class="imgBoxWrap">
-                  <a href="javascript:void(0)">
-                    <div class="imgBox">
-                      <img
-                        src="../img/list_page/first_cate_divide_04.jpg"
-                        alt="바람막이와 자켓"
-                      />
-                    </div>
-                    <div class="name">
-                      <p>바람막이 & 자켓</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div>
-                <div class="imgBoxWrap">
-                  <a href="javascript:void(0)">
-                    <div class="imgBox">
-                      <img
-                        src="../img/list_page/first_cate_divide_05.jpg"
-                        alt="용품"
-                      />
-                    </div>
-                    <div class="name">
-                      <p>용품</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="activity">
-        <div class="inner">
-          <div class="title">
-            <h6>액티비티별</h6>
-          </div>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">
-                  <div class="imgBox">
-                    <img
-                      src="../img/list_page/first_cate_activity01.jpg"
-                      alt="자전거의류"
-                    />
-                  </div>
-                </a>
-                <div class="desc">
-                  <p class="title">CYCLE WEAR</p>
-                  <br />
-                  <br />
-                  <p class="tag">#자전거의류 &nbsp;#사이클웨어</p>
-                  <br />
-                  <p class="text">
-                    자전거의류의 모든 것,<br />
-                    바람막이 조끼 | 자켓 | 져지 | 패드바지 | 빕 | 자전거용품
-                    등<br />
-                    자전거의류의 모든 것을 만나보실 수 있습니다<br />
-                    트렌디하고 스포티한 남자로 거듭나기 위한 여정을<br />
-                    엠씨엔 스포츠와 함께 해요!<br />
-                    <br />
-                    여러분들의 라이딩을 책임져줄 단 하나의 멋.
-                  </p>
-                  <a href="javascript:void(0)"> VIEW </a>
-                </div>
-                <!-- <div class="swiper-button-next"></div> -->
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">
-                  <div class="imgBox">
-                    <img
-                      src="../img/list_page/first_cate_activity02.jpg"
-                      alt="스포츠의류"
-                    />
-                  </div>
-                </a>
-                <div class="desc">
-                  <p class="title">SPORTS WEAR</p>
-                  <br />
-                  <br />
-                  <p class="tag">#스포츠의류 &nbsp;#남성헬스의류</p>
-                  <br />
-                  <p class="text">
-                    놀랍도록 가벼워진 나를 발견하다.
-                    <br />
-                    베이스레이어 | 레깅스 | 팬츠 | 이너웨어 | 헬스 용품 등
-                    <br />다양한 헬스의류를 만나볼 수 있어요<br />
-                    어디서든 당당한 헬스인이 될 준비가 되셨나요?
-                    <br />남자의 건강을 배로 챙겨줄 엠씨엔스포츠 헬스의류
-                  </p>
-                  <a href="javascript:void(0)"> VIEW </a>
-                </div>
-                <!-- <div class="swiper-button-next"></div> -->
-              </div>
-              <div class="swiper-slide">
-                <a href="javascript:void(0)">
-                  <div class="imgBox">
-                    <img
-                      src="../img/list_page/first_cate_activity03.jpg"
-                      alt="피싱의류"
-                    />
-                  </div>
-                </a>
-                <div class="desc">
-                  <p class="title">FISHING WEAR</p>
-                  <br />
-                  <br />
-                  <p class="tag">#낚시의류 &nbsp;#낚시바람막이</p>
-                  <br />
-                  <p class="text">
-                    낚시의류의 모든 것,<br />
-                    티셔츠 | 자켓 | 바지 | 이너웨어 | 점퍼 | 낚시용품
-                    등<br />
-                    강한 바람에도 끄덕없는 낚시의류가<br />
-                    여러분들을 기다리고 있습니다<br>
-                    엠씨엔 피싱과 함께 두배의 손맛을 즐기자!
-                    <br />
-                  </p>
-                  <a href="javascript:void(0)"> VIEW </a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-      </section>
-      <section></section>
+        </section>
+      </div>
     </main>
+
+
 
     <!-- footer -->
     <footer>
@@ -611,7 +550,7 @@
         </div>
       </div>
     </footer>
-    <script src="../JS/list.js"></script>
+    <script src="../JS/secCate.js"></script>
     <script src="../JS/common.js"></script>
   </body>
 </html>

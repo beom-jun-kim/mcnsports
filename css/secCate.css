@@ -1,0 +1,129 @@
+main {
+  margin-top: 50px;
+}
+
+main .inner {
+  display: flex;
+}
+
+section,
+aside {
+  padding-top: 100px;
+}
+
+
+/* 필터검색 */
+aside {
+  width: 250px;
+}
+
+aside .filterBox .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+aside .filterBox .box {
+  margin-top: 40px;
+}
+
+aside .selectBox {
+  margin-bottom: 5px;
+}
+
+aside .flexBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside input[type="checkbox"] {
+  transform: translateY(3px);
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  accent-color: #000;
+}
+
+aside .price .selectBox {
+  display: inline-block;
+  width: 120px;
+}
+
+aside .size .selectBox {
+  width: 60px;
+}
+
+aside .color .selectBox {
+  width: 80px;
+}
+
+aside .selectBox button {
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border: 1px solid rgb(141, 141, 141);
+}
+
+
+.ps-chkbox {
+    /* position: relative; */
+    /* display: inline-block; */
+    /* vertical-align: top; */
+}
+
+.ps-chkbox > label {
+    /* position: relative; */
+    /* display: block; */
+    cursor: pointer;
+}
+
+.ps-chkbox > label > input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+.ps-chkbox > label > input[type="checkbox"] + .text {
+    position: relative;
+    /* display: inline-block; */
+    padding-left: 20px;
+    /* font-size: 16px; */
+    /* color: #222; */
+    /* line-height: 20px; */
+}
+
+.ps-chkbox > label > input[type="checkbox"].etc-color + .text::before {
+    /* border: none; */
+}
+
+.ps-chkbox > label > input.red + .text::before {
+    background-color: #FF0000;
+}
+
+.ps-chkbox > label > input.orange + .text::before {
+    background-color: #f7a000;
+}
+
+.ps-chkbox > label > input[type="checkbox"] + .text::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+}
+
+.ps-chkbox > label > input[type="checkbox"].etc-color:checked + .text::before {
+    background-image: url(../img/logo_b2b.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50px;
+}
