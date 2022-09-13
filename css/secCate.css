@@ -11,6 +11,9 @@ aside {
   padding-top: 100px;
 }
 
+header {
+  background: #fff;
+}
 
 /* 필터검색 */
 aside {
@@ -67,63 +70,91 @@ aside .selectBox button {
   border: 1px solid rgb(141, 141, 141);
 }
 
-
 .ps-chkbox {
-    /* position: relative; */
-    /* display: inline-block; */
-    /* vertical-align: top; */
+  position: relative;
 }
 
 .ps-chkbox > label {
-    /* position: relative; */
-    /* display: block; */
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .ps-chkbox > label > input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
 }
 
 .ps-chkbox > label > input[type="checkbox"] + .text {
-    position: relative;
-    /* display: inline-block; */
-    padding-left: 20px;
-    /* font-size: 16px; */
-    /* color: #222; */
-    /* line-height: 20px; */
-}
-
-.ps-chkbox > label > input[type="checkbox"].etc-color + .text::before {
-    /* border: none; */
+  position: relative;
+  padding-left: 22px;
 }
 
 .ps-chkbox > label > input.red + .text::before {
-    background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 .ps-chkbox > label > input.orange + .text::before {
-    background-color: #f7a000;
+  background-color: #f7a000;
+}
+
+.ps-chkbox > label > input.beige + .text::before {
+  background-color: #f5f5dc;
+}
+
+.ps-chkbox > label > input.pink + .text::before {
+  background-color: #ff69b4;
+}
+
+.ps-chkbox > label > input.brown + .text::before {
+  background-color: #a52a2a;
+}
+
+.ps-chkbox > label > input.grey + .text::before {
+  background-color: #919499;
+}
+
+.ps-chkbox > label > input.green + .text::before {
+  background-color: #008000;
+}
+
+.ps-chkbox > label > input.blue + .text::before {
+  background-color: #0000ff;
+}
+
+.ps-chkbox > label > input.navy + .text::before {
+  background-color: #000080;
+}
+
+.ps-chkbox > label > input.black + .text::before {
+  background-color: #000000;
+}
+
+.ps-chkbox > label > input.white + .text::before {
+  background-color: #ffffff;
+}
+
+.ps-chkbox > label > input.purple + .text::before {
+  background-color: #a040ce;
 }
 
 .ps-chkbox > label > input[type="checkbox"] + .text::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    border-radius: 3px;
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: thin solid rgb(199, 199, 199);
 }
 
 .ps-chkbox > label > input[type="checkbox"].etc-color:checked + .text::before {
-    background-image: url(../img/logo_b2b.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50px;
+  background-image: url(../img/logo_b2b.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
 }

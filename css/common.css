@@ -19,6 +19,14 @@ html {
   overflow-x: hidden;
 }
 
+div {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -172,7 +180,7 @@ header .userBox input {
   width: 238px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.479);
-  transition: .8s;
+  transition: 0.8s;
 }
 
 header .userBox input::placeholder {
