@@ -12,4 +12,16 @@ $(document).ready(function () {
   $(".listTabNavi a").click(function (e) {
     e.preventDefault();
   });
+
+  $(function () {
+    $("#tab01 .productBox li").hide();
+    $("#tab01 .productBox li").slice(0, 16).show();
+    $(".more").click(function (e) {
+      e.preventDefault();
+      $("#tab01 .productBox li:hidden").slice(0, 8).show();
+      if ($("#tab01 .productBox li:hidden").length === 0) {
+        $(this).hide();
+      }
+    });
+  });
 });

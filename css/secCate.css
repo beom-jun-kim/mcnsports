@@ -9,6 +9,11 @@ main .inner {
 section,
 aside {
   padding-top: 100px;
+  width: calc(100% - 250px);
+}
+
+section {
+  padding-left: 40px;
 }
 
 header {
@@ -18,6 +23,7 @@ header {
 /* 필터검색 */
 aside {
   width: 250px;
+  margin-bottom: 50px;
 }
 
 aside .filterBox .title {
@@ -70,15 +76,15 @@ aside .selectBox button {
   border: 1px solid rgb(141, 141, 141);
 }
 
-.ps-chkbox {
+aside .colorCheckBox {
   position: relative;
 }
 
-.ps-chkbox > label {
+aside .colorCheckBox > label {
   cursor: pointer;
 }
 
-.ps-chkbox > label > input {
+aside .colorCheckBox > label > input {
   position: absolute;
   top: 0;
   left: 0;
@@ -88,60 +94,60 @@ aside .selectBox button {
   clip: rect(0, 0, 0, 0);
 }
 
-.ps-chkbox > label > input[type="checkbox"] + .text {
+aside .colorCheckBox > label > input[type="checkbox"] + .text {
   position: relative;
   padding-left: 22px;
 }
 
-.ps-chkbox > label > input.red + .text::before {
+aside .colorCheckBox > label > input.red + .text::before {
   background-color: #ff0000;
 }
 
-.ps-chkbox > label > input.orange + .text::before {
+aside .colorCheckBox > label > input.orange + .text::before {
   background-color: #f7a000;
 }
 
-.ps-chkbox > label > input.beige + .text::before {
+aside .colorCheckBox > label > input.beige + .text::before {
   background-color: #f5f5dc;
 }
 
-.ps-chkbox > label > input.pink + .text::before {
+aside .colorCheckBox > label > input.pink + .text::before {
   background-color: #ff69b4;
 }
 
-.ps-chkbox > label > input.brown + .text::before {
+aside .colorCheckBox > label > input.brown + .text::before {
   background-color: #a52a2a;
 }
 
-.ps-chkbox > label > input.grey + .text::before {
+aside .colorCheckBox > label > input.grey + .text::before {
   background-color: #919499;
 }
 
-.ps-chkbox > label > input.green + .text::before {
+aside .colorCheckBox > label > input.green + .text::before {
   background-color: #008000;
 }
 
-.ps-chkbox > label > input.blue + .text::before {
+aside .colorCheckBox > label > input.blue + .text::before {
   background-color: #0000ff;
 }
 
-.ps-chkbox > label > input.navy + .text::before {
+aside .colorCheckBox > label > input.navy + .text::before {
   background-color: #000080;
 }
 
-.ps-chkbox > label > input.black + .text::before {
+aside .colorCheckBox > label > input.black + .text::before {
   background-color: #000000;
 }
 
-.ps-chkbox > label > input.white + .text::before {
+aside .colorCheckBox > label > input.white + .text::before {
   background-color: #ffffff;
 }
 
-.ps-chkbox > label > input.purple + .text::before {
+aside .colorCheckBox > label > input.purple + .text::before {
   background-color: #a040ce;
 }
 
-.ps-chkbox > label > input[type="checkbox"] + .text::before {
+aside .colorCheckBox > label > input[type="checkbox"] + .text::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -152,9 +158,128 @@ aside .selectBox button {
   border: thin solid rgb(199, 199, 199);
 }
 
-.ps-chkbox > label > input[type="checkbox"].etc-color:checked + .text::before {
-  background-image: url(../img/logo_b2b.png);
+aside
+  .colorCheckBox
+  > label
+  > input[type="checkbox"].etc-color:checked
+  + .text::before {
+  background-image: url(../img/secCate_page/check.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
+  background-size: 11px;
+}
+
+aside
+  .colorCheckBox
+  > label
+  > input[type="checkbox"].beige:checked
+  + .text::before {
+  background-image: url(../img/secCate_page/check_black.png);
+}
+aside
+  .colorCheckBox
+  > label
+  > input[type="checkbox"].white:checked
+  + .text::before {
+  background-image: url(../img/secCate_page/check_black.png);
+}
+
+aside .resetBtn {
+  margin-top: 20px;
+  background: none;
+  width: 100%;
+  height: 47px;
+  line-height: 47px;
+  cursor: pointer;
+  font-size: var(--small-font);
+  font-weight: var(--bold-font);
+}
+
+/* 상품나열 */
+section .route {
+  font-size: var(--small-font);
+  font-weight: 300;
+}
+
+section .listTab {
+  margin: 20px 0 40px;
+  font-size: var(--normal-font);
+}
+
+section .listTab .listTabNavi {
+  display: flex;
+}
+
+section .listTab .listTabNavi li {
+  margin-right: 30px;
+}
+
+section .listTab .listTabNavi li:last-child {
+  margin-right: 0;
+}
+
+section .listTab .listTabNavi li a {
+  color: rgb(139, 139, 139);
+  font-weight: 300;
+}
+
+section .listTab .listTabNavi li a.active {
+  color: #000;
+  font-weight: var(--bold-font);
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+section .listTabContent {
+  margin-bottom: 130px;
+}
+
+section .listTabContent .productBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section .listTabContent .productBox li {
+  width: 25%;
+  padding-bottom: 70px;
+}
+
+/* section .listTabContent .productBox li:hover {
+  border: 1px solid #000;
+} */
+
+section .listTabContent .icon {
+  width: 40px;
+  height: 17px;
+  margin-top: 10px;
+}
+
+section .listTabContent .price {
+  display: flex;
+}
+
+section .listTabContent .name {
+  margin: 8px 0;
+}
+
+section .listTabContent p {
+  font-size: var(--small-font);
+  color: rgb(139, 139, 139);
+}
+
+section .listTabContent .price p:first-child {
+  text-decoration: line-through;
+  margin-right: 7px;
+}
+
+section .listTabContent .price p:last-child {
+  color: #2e2e2e;
+  font-weight: var(--bold-font);
+}
+
+section .more {
+  width: 80px;
+  height: 89px;
+  margin: 50px auto 0;
+  cursor: pointer;
 }

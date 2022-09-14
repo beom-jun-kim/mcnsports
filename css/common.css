@@ -197,6 +197,7 @@ header .userBox i {
 
 /* footer */
 footer {
+  position: relative;
   height: 800px;
   padding: 100px 0;
   background: #181818;
