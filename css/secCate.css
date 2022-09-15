@@ -32,6 +32,10 @@ aside .filterBox .title {
   margin-bottom: 10px;
 }
 
+aside .filterBox i {
+  margin-left: 5px;
+}
+
 aside .filterBox .box {
   margin-top: 40px;
 }
@@ -243,10 +247,6 @@ section .listTabContent .productBox li {
   width: 25%;
   padding-bottom: 70px;
 }
-
-/* section .listTabContent .productBox li:hover {
-  border: 1px solid #000;
-} */
 
 section .listTabContent .icon {
   width: 40px;

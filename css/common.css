@@ -19,20 +19,21 @@ html {
   overflow-x: hidden;
 }
 
-div {
-  -ms-user-select: none;
-  -moz-user-select: -moz-none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   color: #2e2e2e;
+}
+
+label, .swiper-slide {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
 }
 
 ul {
