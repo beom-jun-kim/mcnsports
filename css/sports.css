@@ -28,4 +28,5 @@ main {
 #wear .imgDesc a {
     border: 2px solid #000;
     padding: 10px 40px;
+    font-weight: 500;
 }

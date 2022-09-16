@@ -24,4 +24,14 @@ $(document).ready(function () {
       }
     });
   });
+
+  $(".resetBtn").click(function () {
+    if ($("input").prop("checked")) {
+      $("input[type='checkbox'].etc-color").prop("checked",true);
+      $(".initBtn").prop("checked", true);
+    } else {
+      $("input[type='checkbox'].etc-color").prop("checked",false);
+      $(".initBtn").prop("checked", false);
+    }
+  });
 });
