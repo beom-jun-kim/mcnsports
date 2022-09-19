@@ -1782,23 +1782,5 @@
     </footer>
     <script src="../JS/secCate.js"></script>
     <script src="../JS/common.js"></script>
-
-    <script>
-      const ageArr = new Array();
-      const showFilterValue = document.querySelector("#tab01 .productBox");
-
-      function makeFilter(target) {
-        const ageVal = target.value;
-        const confirmCheck = target.checked;
-
-        if (confirmCheck === true) {
-          ageArr.push(ageVal);
-        } else {
-          ageArr.splice(ageArr.indexOf(ageVal), 1);
-        }
-
-        showFilterValue.value = ageArr;
-      }
-    </script>
   </body>
 </html>
