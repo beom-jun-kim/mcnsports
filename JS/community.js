@@ -6,16 +6,16 @@ $(document).ready(function () {
       $(".tabComCate a").removeClass("active");
       $(this).addClass("active");
     })
-    .filter(":eq(0)")
+    .filter(":eq(4)")
     .click();
 
   $(".tabComCate a").click(function (e) {
     e.preventDefault();
   });
 
-  $('.answer').hide();
-  $('.question').click(function(){
-    $('.answer').slideToggle();
+  $(".answer").hide();
+  $(".question").click(function () {
+    $(".question").children(".answer").stop().slideUp();
+    $(this).children(".answer").stop().slideToggle();
   });
 });
-

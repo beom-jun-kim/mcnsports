@@ -13,10 +13,10 @@ section {
 }
 
 table tr td {
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 #community .title h1 {
@@ -121,8 +121,8 @@ table tr td {
 }
 
 #community table label {
-    position: relative;
-    top: -1.1px;
+  position: relative;
+  top: -1.1px;
 }
 
 #community select {
@@ -178,40 +178,47 @@ table tr td {
 
 /* review */
 #community .reviewImg {
-    width: 100px;
-    margin: 0 auto;
+  width: 100px;
+  margin: 0 auto;
 }
 
 #community .point {
-    width: 80px;
-    margin: 0 auto;
+  width: 80px;
+  margin: 0 auto;
 }
 
 #community #tabCom03 table tr td {
-    padding: 1rem 0;
+  padding: 1rem 0;
 }
 
 #community .txtReview {
-    line-height: 25px;
+  line-height: 25px;
 }
 
 #community .txtReview p:first-child {
-    color: #acacac;
-    font-weight: 300;
+  color: #acacac;
+  font-weight: 300;
 }
 
 /* FAQ */
-#community td {
-    cursor: pointer;
+#community td.question {
+  cursor: pointer;
 }
 #community .qAandA {
-    width: 25px;
-    margin: 0 auto;
-    font-size: 26px;
-    font-weight: bold;
+  width: 25px;
+  margin: 0 auto;
+  font-size: 26px;
+  font-weight: bold;
 }
 
 #community .qAandA img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
+#community .answer {
+  margin-top: 20px;
+}
+
+#community #tabCom05 table tr:nth-child(even) td:nth-child(2) {
+    background: sandybrown;
+}
