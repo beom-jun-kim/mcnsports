@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/community.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <title>2차 카테고리 페이지</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="inner">
+        <div class="logo">
+          <a href="../index.html" class="logoDarkMode">
+            <img src="../img/logo_mcnsports.png" alt="엠씨엔로고블랙" />
+          </a>
+        </div>
+        <nav>
+          <ul class="gnb">
+            <li class="firstCate">
+              <div class="firstCateText">
+                <a href="../src/list.html">남성</a>
+              </div>
+              <div class="secWrapBox">
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">Men</a></li>
+                  <li>셋업</li>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">의류</a></li>
+                  <li>탑 & 져지</li>
+                  <li>팬츠 & 타이즈</li>
+                  <li>바람막이 & 자켓</li>
+                  <li>언더레이어</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">용품</a></li>
+                  <li>모자 & 헤어밴드</li>
+                  <li>마스크</li>
+                  <li>가방</li>
+                  <li>토시</li>
+                  <li>장갑</li>
+                  <li>양말</li>
+                  <li>기타</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">스포츠</a></li>
+                  <li>사이클</li>
+                  <li>헬스 & 컴프레션</li>
+                  <li>낚시</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">브랜드</a></li>
+                  <li>MCN SPORTS</li>
+                  <li>MCN FIT</li>
+                  <li>MCN FISHING</li>
+                </ul>
+                <div class="modelImg">
+                  <img src="../img/modelImg_men.jpg" alt="남자모델이미지" />
+                </div>
+              </div>
+            </li>
+            <li class="firstCate">
+              <div class="firstCateText">
+                <a href="../src/women.html">여성</a>
+              </div>
+              <div class="secWrapBox">
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">Women</a></li>
+                  <li>셋업</li>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">의류</a></li>
+                  <li>래쉬가드</li>
+                  <li>스포츠 브라</li>
+                  <li>탑 & 져지</li>
+                  <li>팬츠 & 타이즈</li>
+                  <li>바람막이 & 자켓</li>
+                  <li>언더레이어</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">용품</a></li>
+                  <li>모자 & 헤어밴드</li>
+                  <li>마스크</li>
+                  <li>가방</li>
+                  <li>토시</li>
+                  <li>장갑</li>
+                  <li>양말</li>
+                  <li>기타</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">스포츠</a></li>
+                  <li>사이클</li>
+                  <li>수상 스포츠</li>
+                  <li>요가</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">브랜드</a></li>
+                  <li>MCN SPORTS</li>
+                  <li>MECENAT</li>
+                </ul>
+                <div class="modelImg">
+                  <img src="../img/modelImg_women.jpg" alt="여자모델이미지" />
+                </div>
+              </div>
+            </li>
+            <li class="firstCate">
+              <div class="firstCateText"><a href="#">키즈</a></div>
+              <div class="secWrapBox">
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">Kids</a></li>
+                  <li>신상품</li>
+                  <li>베스트</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">용품</a></li>
+                  <li>마스크</li>
+                </ul>
+                <ul class="secCate"></ul>
+                <ul class="secCate"></ul>
+                <ul class="secCate"></ul>
+                <div class="modelImg">
+                  <img src="../img/modelImg_etc.jpg" alt="키즈모델이미지" />
+                </div>
+              </div>
+            </li>
+            <li class="firstCate">
+              <div class="firstCateText">
+                <a href="../src/sports.html">스포츠</a>
+              </div>
+              <div class="secWrapBox">
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">사이클</a></li>
+                  <li>셋업</li>
+                  <li>바람막이 & 자켓</li>
+                  <li>져지</li>
+                  <li>팬츠 & 빕</li>
+                  <li>언더레이어</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">헬스 & 컴프레션</a></li>
+                  <li>셋업</li>
+                  <li>탑 & 티셔츠</li>
+                  <li>팬츠 & 타이즈</li>
+                  <li>언더레이어</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">낚시</a></li>
+                  <li>셋업</li>
+                  <li>져지 & 티셔츠</li>
+                  <li>바람막이 & 자켓</li>
+                  <li>팬츠 & 타이즈</li>
+                  <li>언더레이어</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">수상스포츠</a></li>
+                  <li>셋업</li>
+                  <li>아우터</li>
+                  <li>상의</li>
+                  <li>하의</li>
+                </ul>
+                <ul class="secCate">
+                  <li><a href="../src/secCate.html">요가</a></li>
+                  <li>셋업</li>
+                  <li>스포츠 브라</li>
+                  <li>레깅스</li>
+                </ul>
+                <div class="modelImg">
+                  <img
+                    src="../img/modelImg_sports.jpg"
+                    alt="스포츠모델이미지"
+                  />
+                </div>
+              </div>
+            </li>
+            <li class="firstCate">
+              <a href="../src/event.html">이벤트</a>
+            </li>
+            <li class="firstCate">
+              <a href="#">커뮤니티</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="userBox">
+          <div class="searchBar">
+            <input
+              type="text"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='춘추복 세트'"
+              maxlength="12"
+              placeholder=" 춘추복 세트"
+              required
+            />
+          </div>
+          <div class="userIcon">
+            <a href="#"><i class="xi-user-o"></i></a>
+          </div>
+          <div class="userIcon">
+            <a href="#"><i class="xi-basket"></i></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="community">
+        <div class="inner">
+          <div class="title">
+            <h1>COMMUNITY</h1>
+          </div>
+
+          <div class="comTab">
+            <ul class="tabComCate">
+              <li>
+                <a href="#tabCom01"><span>공지사항</span></a>
+              </li>
+              <li>
+                <a href="#tabCom02"><span>엠씨엔뉴스</span></a>
+              </li>
+              <li>
+                <a href="#tabCom03"><span>상품후기</span></a>
+              </li>
+              <li>
+                <a href="#tabCom04"><span>FAQ</span></a>
+              </li>
+              <li>
+                <a href="#tabCom05"><span>문의하기</span></a>
+              </li>
+              <li>
+                <a href="#tabCom06"><span>업무제휴</span></a>
+              </li>
+            </ul>
+            <div class="comSearchBox">
+              <input
+                type="text"
+                onfocus="this.placeholder=''"
+                onblur="this.placeholder='검색어를 입력하세요'"
+                placeholder=" 검색어를 입력하세요"
+              />
+            </div>
+            <div class="tabComContent">
+              <div id="tabCom01">
+                <table width="100%">
+                  <colgroup>
+                    <col width="10%" />
+                    <col width="70%" />
+                    <col width="20%" />
+                  </colgroup>
+
+                  <thead>
+                    <tr>
+                      <th>번호</th>
+                      <th style="text-align: left; padding-left: 20px">제목</th>
+                      <th>작성일</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="important">
+                      <td>
+                        <input type="checkbox" name="notice01" id="notice01" />
+                        <label for="notice01">72</label>
+                      </td>
+                      <td>
+                        <p>[공지] 엠씨엔 브랜드 사칭주의</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr class="important">
+                      <td>
+                        <input type="checkbox" name="notice02" id="notice02" />
+                        <label for="notice02">72</label>
+                      </td>
+                      <td>
+                        <p>[공지] 엠씨엔 스포츠 코스닥 상장예정</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr class="important">
+                      <td>
+                        <input type="checkbox" name="notice03" id="notice03" />
+                        <label for="notice03">72</label>
+                      </td>
+                      <td>
+                        <p>[공지] 엠씨엔 화장품 브랜드 런칭</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr class="important">
+                      <td>
+                        <input type="checkbox" name="notice04" id="notice04" />
+                        <label for="notice04">72</label>
+                      </td>
+                      <td>
+                        <p>[공지] 2022 상반기 한국인기브랜드 대상</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice05" id="notice05" />
+                        <label for="notice05">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice06" id="notice06" />
+                        <label for="notice06">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice07" id="notice07" />
+                        <label for="notice07">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice08" id="notice08" />
+                        <label for="notice08">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice09" id="notice09" />
+                        <label for="notice09">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice10" id="notice10" />
+                        <label for="notice10">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice11" id="notice11" />
+                        <label for="notice11">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice12" id="notice12" />
+                        <label for="notice12">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice13" id="notice13" />
+                        <label for="notice13">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice14" id="notice14" />
+                        <label for="notice14">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <input type="checkbox" name="notice15" id="notice15" />
+                        <label for="notice15">72</label>
+                      </td>
+                      <td>
+                        <p>[출시안내] MTB 마운틴 다운힐 의류세트 출시</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="tabCom02">
+                <div class="newsImgWrap">
+                  <ul class="newsImg">
+                    <li>
+                      <img src="../img/community/commuity_01.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_02.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_01.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_02.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_01.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_02.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_01.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_02.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_01.jpg" alt="" />
+                    </li>
+                    <li>
+                      <img src="../img/community/commuity_02.jpg" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tabCom03">
+                <table width="100%">
+                  <colgroup>
+                    <col width="10%" />
+                    <col width="60%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                    <col width="10%" />
+                  </colgroup>
+
+                  <thead>
+                    <tr>
+                      <th>이미지</th>
+                      <th style="text-align: left; padding-left: 20px">제목</th>
+                      <th>평점</th>
+                      <th>작성자</th>
+                      <th>등록일</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="reviewImg">
+                          <img src="../img/community/review_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td>
+                        <div class="txtReview">
+                          <p>[기모 트랙 긴팔져지]</p>
+                          <p>너무 환상적이에요</p>
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <div class="point">
+                          <img src="../img/community/point_img.jpg" alt="" />
+                        </div>
+                      </td>
+                      <td class="txtCen">
+                        <p>김**</p>
+                      </td>
+                      <td>
+                        <p>2022.01.01</p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="tabCom04">
+                <table width="100%">
+                  <colgroup>
+                    <col width="10%" />
+                    <col width="70%" />
+                  </colgroup>
+
+                  <tbody>
+                    <tr class="question">
+                      <td>
+                        <div class="qAandA">
+                          <p>Q</p>
+                        </div>
+                      </td>
+                      <td>
+                        <p>엠씨엔 스포츠는 왜이리 좋나요?</p>
+                      </td>
+                      <td>
+                        <p></p>
+                      </td>
+                    </tr>
+                    <tr class="answer">
+                      <td>
+                        <div class="qAandA">
+                          <p>A</p>
+                        </div>
+                      </td>
+                      <td>
+                        <p>
+                          엠씨엔 스포츠는 수십년간의 노하우를 섭렵한 국내 최고의 자전거의류
+                          기업입니다
+                        </p>
+                      </td>
+                      <td>
+                        <p></p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div id="tabCom05">content5 content5 content5</div>
+              <div id="tabCom06">content6 content6 content6</div>
+            </div>
+            <p class="move">
+              해당 글 이동
+              <select name="move" id="move">
+                <option value="notice">공지사항</option>
+                <option value="news">엠씨엔뉴스</option>
+                <option value="review">상품후기</option>
+                <option value="faq">FAQ</option>
+                <option value="q&a">문의하기</option>
+                <option value="b2b">업무제휴</option>
+              </select>
+              으로
+              <button class="moveBtn">글이동</button>
+              <button class="moveBtn">글복사</button>
+              *댓글 포함, 답변 불포함
+              <button class="write">글쓰기</button>
+            </p>
+            <ul class="pagination">
+              <li><img src="../img/event/prev_w_arrow.jpg" alt="" /></li>
+              <li><img src="../img/event/prev_arrow.jpg" alt="" /></li>
+              <li>
+                <a href="javascript:void()"><strong>1</strong></a>
+              </li>
+              <li><a href="javascript:void()">2</a></li>
+              <li><a href="javascript:void()">3</a></li>
+              <li><a href="javascript:void()">4</a></li>
+              <li><a href="javascript:void()">5</a></li>
+              <li><a href="javascript:void()">6</a></li>
+              <li><a href="javascript:void()">7</a></li>
+              <li><a href="javascript:void()">8</a></li>
+              <li><img src="../img/event/prev_arrow.jpg" alt="" /></li>
+              <li><img src="../img/event/prev_w_arrow.jpg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="inner">
+        <div class="onBox">
+          <div class="onBoxWrap">
+            <div class="onBoxTitle"><h3>Support</h3></div>
+            <div class="flexBox">
+              <ul class="leftBox">
+                <li>
+                  <a href="javascript:void(0)">세탁 및 취급 시 주의사항</a>
+                </li>
+                <li><a href="javascript:void(0)">배송 및 교환/반품 안내</a></li>
+                <li><a href="javascript:void(0)">자주 묻는 질문</a></li>
+                <li><a href="javascript:void(0)">문의하기</a></li>
+              </ul>
+              <ul class="rightBox">
+                <li><a href="javascript:void(0)">이용약관</a></li>
+                <li><a href="javascript:void(0)">개인정보처리방침</a></li>
+                <li><a href="javascript:void(0)">이용안내</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="onBoxWrap">
+            <div class="onBoxTitle"><h3>Brand</h3></div>
+            <div class="flexBox">
+              <ul class="leftBox">
+                <li><a href="javascript:void(0)">엠씨엔커스텀</a></li>
+                <li><a href="javascript:void(0)">메세나</a></li>
+                <li><a href="javascript:void(0)">엠씨엔핏</a></li>
+              </ul>
+              <ul class="rightBox">
+                <li><a href="javascript:void(0)">B2B mall</a></li>
+                <li><a href="javascript:void(0)">엠씨엔피싱</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="onBoxWrap">
+            <div class="onBoxTitle"><h3>Contact & Bank Info</h3></div>
+            <div class="flexBox">
+              <ul class="leftBox">
+                <li>
+                  <a href="tel: 1566-8657" class="contactNum">1566-8657</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">평일 오전 9시 ~ 오후 6시</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">점심 오후 1시 ~ 오후 2시</a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">(토 / 일 / 공휴일 휴무)</a>
+                </li>
+                <li><a href="javascript:void(0)">※ 광고대행사 연락 금지</a></li>
+              </ul>
+              <ul class="rightBox">
+                <li><a href="javascript:void(0)">국민 634901-04-139078</a></li>
+                <li><a href="javascript:void(0)">농협 719-02-278772</a></li>
+                <li><a href="javascript:void(0)">예금주 : 황재웅</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="underBox">
+          <div class="underBoxWrap">
+            <div class="companyInfo">
+              <p>
+                COMPANY : MCNSPORTS OWNER : 황재웅<br />
+                BUSINESS LICENSE : [503-40-91480] 통신판매업 신고 제
+                2015-대구서구-0177호 [사업자정보확인]<br />
+                TEL : 1566-8657 FAX : 053-561-8691 ADDRESS : 703010 대구광역시
+                서구 평리동 1186-3 MCN빌딩<br />
+                CPO : 황재웅(admin@mcnsports.co.kr)<br />
+              </p>
+              <p class="copyright">
+                Copyright © 2017 MCNSPORTS. All rights reserved.
+              </p>
+            </div>
+            <div class="sns">
+              <div class="snsTitle"><h3>SNS</h3></div>
+              <ul class="snsBox">
+                <li>
+                  <a href="javascript:void(0)"
+                    ><i class="xi-facebook-official"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="xi-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="xi-blogger"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="postWrap">
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="post">
+            <img src="../img/postoffice.jpg" alt="우체국이미지" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../JS/community.js"></script>
+    <script src="../JS/common.js"></script>
+  </body>
+</html>

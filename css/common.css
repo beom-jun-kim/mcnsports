@@ -27,7 +27,8 @@ html {
   color: #2e2e2e;
 }
 
-label, .swiper-slide {
+label,
+.swiper-slide {
   -ms-user-select: none;
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
@@ -296,4 +297,35 @@ footer .postWrap {
 footer .empty {
   width: 34.1%;
   height: 50px;
+}
+
+.pagination {
+  margin: 70px 0 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  margin-right: 30px;
+  font-weight: 300;
+  font-size: var(--small-font);
+}
+
+.pagination li:last-child {
+  margin-right: 0;
+}
+
+.pagination li:first-child,
+.pagination li:last-child {
+  width: 13px;
+}
+
+.pagination li:nth-child(2),
+.pagination li:nth-last-child(2) {
+  width: 7px;
+}
+
+.pagination li:nth-last-child(2),
+.pagination li:last-child {
+  transform: rotate(180deg);
 }

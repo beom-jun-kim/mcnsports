@@ -59,34 +59,3 @@ section {
   font-size: var(--small-font);
   margin: 20px 0;
 }
-
-#event .pagination {
-  margin: 70px 0 100px;
-  display: flex;
-  justify-content: center;
-}
-
-#event .pagination li {
-  margin-right: 30px;
-  font-weight: 300;
-  font-size: var(--small-font);
-}
-
-#event .pagination li:last-child {
-  margin-right: 0;
-}
-
-#event .pagination li:first-child,
-#event .pagination li:last-child {
-  width: 13px;
-}
-
-#event .pagination li:nth-child(2),
-#event .pagination li:nth-last-child(2) {
-  width: 7px;
-}
-
-#event .pagination li:nth-last-child(2),
-#event .pagination li:last-child {
-  transform: rotate(180deg);
-}
