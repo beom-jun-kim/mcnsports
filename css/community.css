@@ -220,5 +220,11 @@ table tr td {
 }
 
 #community #tabCom05 table tr:nth-child(even) td:nth-child(2) {
-    background: sandybrown;
+  
+}
+
+#community #tabCom05 table td:nth-child(2) {
+  background: url("../img/community/lock_img.png") no-repeat center/cover;
+  background-size: 15px;
+  background-position: 135px;
 }
