@@ -6,7 +6,7 @@ $(document).ready(function () {
       $(".tabComCate a").removeClass("active");
       $(this).addClass("active");
     })
-    .filter(":eq(4)")
+    .filter(":eq(0)")
     .click();
 
   $(".tabComCate a").click(function (e) {
