@@ -208,4 +208,5 @@ section {
 #write #sector {
   border: 1px solid #d1d1d1;
   margin-right: 2px;
+  color: #000;
 }
