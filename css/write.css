@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+header {
+  background: #fff;
+}
+
+main {
+  margin-top: 50px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+#write input[type="checkbox"] {
+  accent-color: #2e2e2e;
+  cursor: pointer;
+}
+
+#write table {
+  border-top: 2px solid #2e2e2e;
+  font-size: var(--small-font);
+  border-collapse: collapse;
+}
+
+#write .title h1 {
+  font-size: var(--big-font);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#write .inner {
+  max-width: 1300px;
+}
+
+#write .tabComCate {
+  display: flex;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+#write .tabComCate li {
+  width: 16.66666666666667%;
+  text-align: center;
+  font-size: var(--normal-font);
+}
+
+#write .tabComCate li a {
+  display: block;
+  font-weight: 300;
+  height: 100%;
+  padding: 1.3rem 0;
+}
+
+#write .tabComCate li a.active {
+  font-weight: var(--big-font);
+}
+
+#write .tabComCate li a.active span {
+  border-bottom: 2px solid #000;
+  padding: 1.3rem 0;
+}
+
+#write table {
+  margin: 50px 0 0;
+}
+
+#write table tr {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+#write table tr td {
+  padding: 17px 0;
+}
+
+#write input[id="titleInput"],
+#write input[id="contentInput"] {
+  width: 100%;
+  padding-left: 3px;
+}
+
+#write input[id="imgInput"],
+#write input[id="passwordinput"] {
+  width: 40%;
+}
+
+#write input[id="imgInput"],
+#write input[id="passwordinput"],
+#write input[id="titleInput"],
+#write input[id="contentInput"] {
+  height: 30px;
+  border: 1px solid #d1d1d1;
+  outline: none;
+}
+
+#write label[for="imgInput"] a {
+  padding: 5px 20px;
+  background: #2e2e2e;
+  color: #fff;
+  outline: line;
+}
+
+#write input[id="contentInput"] {
+  height: 200px;
+}
+
+#write label[for="notice01"],
+#write label[for="notice03"],
+#write label[for="notice05"],
+#write label[for="notice07"] {
+  margin-right: 10px;
+}
+
+#write label[for^="notice"],
+#write label[for^="pointInput"] {
+  position: relative;
+  top: -1.2px;
+}
+
+#write table tr td:nth-child(3) {
+  text-align: center;
+}
+
+#write .checkBtn {
+  text-align: center;
+  font-size: var(--normal-font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 80px;
+}
+
+#write .checkBtn a {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+}
+#write .checkBtn a:first-child {
+  border: 2px solid #2e2e2e;
+  margin-right: 5px;
+}
+
+#write .checkBtn a:last-child {
+  background: #2e2e2e;
+  color: #fff;
+}
+
+#write .txtPar {
+  position: relative;
+}
+
+#write .textMove {
+  position: absolute;
+  top: -95px;
+}
+
+#write .prdTitle {
+  position: relative;
+}
+
+#write .prdChild {
+  position: absolute;
+  top: -55px;
+}
+
+#write label[for^="pointInput"] {
+  background: url("../img/community/point.png");
+  display: inline-block;
+  width: 106px;
+  height: 18px;
+  vertical-align: top;
+  background-size: 106px 108px;
+  margin-right: 10px;
+}
+
+#write label[for="pointInput01"] {
+  background-position-y: 18px;
+}
+
+#write label[for="pointInput02"] {
+  background-position-y: 35px;
+}
+
+#write label[for="pointInput03"] {
+  background-position-y: 53px;
+}
+
+#write label[for="pointInput04"] {
+  background-position-y: 71px;
+}
+
+#write label[for="pointInput05"] {
+  background-position-y: 89px;
+}
+
+#write .prdSelect {
+  border: 1px solid #000;
+  padding: 3rem 2rem;
+  display: inline-block;
+  color: #d1d1d1;
+  border: 1px solid #d1d1d1;
+}
+
+#write .sectorBox {
+  display: flex;
+}
+
+#write #sector {
+  border: 1px solid #d1d1d1;
+  margin-right: 2px;
+}

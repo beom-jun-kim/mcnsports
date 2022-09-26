@@ -19,6 +19,11 @@ table tr td {
   user-select: none;
 }
 
+#community input[type="checkbox"] {
+  accent-color: #2e2e2e;
+  cursor: pointer;
+}
+
 #community .title h1 {
   font-size: var(--big-font);
   margin-bottom: 20px;
@@ -207,7 +212,7 @@ table tr td {
 #community .qAandA {
   width: 25px;
   margin: 0 auto;
-  font-size: 26px;
+  font-size: var(--small-font);
   font-weight: bold;
 }
 
