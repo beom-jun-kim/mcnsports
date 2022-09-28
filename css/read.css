@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+header {
+  background: #fff;
+}
+
+main {
+  margin-top: 50px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+table tr td {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#read input[type="checkbox"] {
+  accent-color: #2e2e2e;
+  cursor: pointer;
+}
+
+#read .title h1 {
+  font-size: var(--title-font);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#read .inner {
+  max-width: 1300px;
+}
+
+#read .tabComCate {
+  display: flex;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+#read .tabComCate li {
+  width: 16.66666666666667%;
+  text-align: center;
+  font-size: var(--normal-font);
+}
+
+#read .tabComCate li a {
+  display: block;
+  font-weight: 300;
+  height: 100%;
+  padding: 1.3rem 0;
+}
+
+#read .tabComCate li a.active {
+  font-weight: var(--big-font);
+}
+
+#read .tabComCate li a.active span {
+  border-bottom: 2px solid #000;
+  padding: 1.3rem 0;
+}
+
+#read .titleBox {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--small-font);
+  font-weight: var(--bold-font);
+  margin: 40px 0 20px;
+  padding: 1rem 2rem;
+  border-top: 2px solid #000;
+  background: #f1f1f1;
+}
+
+#read .dateTitle p {
+  color: #747474;
+  font-weight: 300;
+}
+
+#read .contentBox {
+  display: flex;
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 15px;
+}
+
+#read .contentImg {
+  width: 50%;
+  padding: 0 0 2.5rem;
+}
+
+#read .managerBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#read .managerBtn a {
+  border: 2px solid #000;
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  font-size: var(--small-font);
+}
+
+#read .marBom {
+  margin-bottom: 200px;
+}
+
+#read .prdRevImg {
+  width: 100px;
+  height: 100px;
+  background: salmon;
+}
+
+#read .prdDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--small-font);
+  line-height: 25px;
+}
+
+#read .prdDesc p:nth-child(2) {
+  color: #8a8a8a;
+}
+
+#read .prdDesc a {
+  text-align: center;
+  width: 50%;
+  border: 1px solid #d1d1d1;
+  margin-top: 5px;
+}
+
+#read .reviewBox {
+  display: flex;
+  padding: 0 0 1.5rem;
+}
+
+#read .reviewTxt {
+  font-size: var(--small-font);
+  border-bottom: 1px solid #d1d1d1;
+  margin-bottom: 15px;
+  padding: 1rem 0 1.5rem;
+}
+
+#read .comment {
+  margin: 40px 0 30px;
+  font-size: var(--small-font);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
+  padding: 2rem 0;
+  /* background: #f1f1f1; */
+}
+
+#read .commentTxt {
+  display: flex;
+  align-items: center;
+}
+
+#read .reple {
+  padding-left: 1rem;
+}
+
+#read .delBtn button {
+  background: none;
+  border: 1px solid #d1d1d1;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+#read .writeBox {
+  font-size: var(--small-font);
+}
+
+#read .writeId,
+#read .writeBox .name,
+#read .writeBox .writePas {
+    display: flex;
+}
+
+#read .writeCom p,
+#read .writeBox .name,
+#read .writeBox .nameBox,
+#read .writeBox .pasBox {
+  margin-right: 10px;
+}
+
+#read .writeCom p {
+    white-space: nowrap;
+}
+
+#read .writeId input {
+    outline: none;
+    border: 1px solid #d1d1d1;
+    padding: 3px;
+}
+
+#read .writeCom {
+    margin-top: 15px;
+    display: flex;
+}
+
+
+#read .writeCom input {
+    width: 90%;
+    height: 100px;
+    border: 1px solid #d1d1d1;
+    outline: none;
+}
+
+#read .writeCom button {
+    width: 10%;
+    cursor: pointer;
+    background: #2e2e2e;
+    color: #fff;
+}

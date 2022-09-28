@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+header {
+  background: #fff;
+}
+
+main {
+  margin-top: 50px;
+}
+
+section {
+  padding-top: 100px;
+}
+
+#myPage .title h1 {
+  font-size: var(--title-font);
+  margin-bottom: 20px;
+}
+
+#myPage .inner {
+  max-width: 1300px;
+}
+
+#myPage .order {
+    display: flex;
+    text-align: center;
+}
+
+#myPage .order h1 {
+    font-family: 'marian';
+}

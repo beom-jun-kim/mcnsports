@@ -24,7 +24,7 @@ section {
 }
 
 #write .title h1 {
-  font-size: var(--big-font);
+  font-size: var(--title-font);
   margin-bottom: 20px;
   text-align: center;
 }
