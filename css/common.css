@@ -128,6 +128,13 @@ header .secCate li {
   cursor: pointer;
   padding: 0;
 }
+header .secCate li a {
+  display: block;
+  transition: 200ms;
+}
+header .secCate li:hover a {
+  color: var(--primary-color);
+}
 
 header .firstCateText {
   width: 100%;

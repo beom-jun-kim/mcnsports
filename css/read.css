@@ -64,12 +64,21 @@ table tr td {
 #read .titleBox {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: var(--small-font);
   font-weight: var(--bold-font);
   margin: 40px 0 20px;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2rem;
   border-top: 2px solid #000;
   background: #f1f1f1;
+}
+
+#read .titleBox .realTitle {
+  font-size: 18px;
+}
+
+#read .titleBox .dateTitle {
+  font-size: var(--small-font);
 }
 
 #read .dateTitle p {
@@ -95,7 +104,7 @@ table tr td {
 }
 
 #read .managerBtn a {
-  border: 2px solid #000;
+  border: 1px solid #d1d1d1;
   display: inline-block;
   text-align: center;
   width: 150px;
@@ -180,7 +189,7 @@ table tr td {
 #read .writeId,
 #read .writeBox .name,
 #read .writeBox .writePas {
-    display: flex;
+  display: flex;
 }
 
 #read .writeCom p,
@@ -191,31 +200,30 @@ table tr td {
 }
 
 #read .writeCom p {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 #read .writeId input {
-    outline: none;
-    border: 1px solid #d1d1d1;
-    padding: 3px;
+  outline: none;
+  border: 1px solid #d1d1d1;
+  padding: 3px;
 }
 
 #read .writeCom {
-    margin-top: 15px;
-    display: flex;
+  margin-top: 15px;
+  display: flex;
 }
 
-
 #read .writeCom input {
-    width: 90%;
-    height: 100px;
-    border: 1px solid #d1d1d1;
-    outline: none;
+  width: 90%;
+  height: 100px;
+  border: 1px solid #d1d1d1;
+  outline: none;
 }
 
 #read .writeCom button {
-    width: 10%;
-    cursor: pointer;
-    background: #2e2e2e;
-    color: #fff;
+  width: 10%;
+  cursor: pointer;
+  background: #2e2e2e;
+  color: #fff;
 }

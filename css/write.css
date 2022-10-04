@@ -136,7 +136,7 @@ section {
   line-height: 50px;
 }
 #write .checkBtn a:first-child {
-  border: 2px solid #2e2e2e;
+  border: 1px solid #d1d1d1;
   margin-right: 5px;
 }
 

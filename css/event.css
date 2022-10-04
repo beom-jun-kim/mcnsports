@@ -24,7 +24,7 @@ section {
 }
 
 #event .eventBox li {
-  width: 25%;
+  width: 33.3333%;
   position: relative;
   padding: 1rem 1rem 1rem 0;
 }
@@ -43,19 +43,12 @@ section {
   background: rgba(0, 0, 0, 0.11);
 }
 
-#event .eventBox li .desc {
-  position: absolute;
-  bottom: 120px;
-  left: 45px;
-  font-weight: var(--bold-font);
-  font-size: var(--normal-font);
-}
-
 #event .eventBox li .desc p {
   color: #fff;
 }
 
 #event .eventBox li .descTitle {
-  font-size: var(--small-font);
+  font-weight: var(--bold-font);
+  font-size: var(--normal-font);
   margin: 20px 0;
 }

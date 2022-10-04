@@ -90,13 +90,13 @@ section {
   width: 49.5%;
 }
 
-#new .newSlider .slick-initialized,
-#cateDivide .cateDivideSlider .slick-initialized {
+#new .newSlider .slick-initialized
+/* #cateDivide .cateDivideSlider .slick-initialized */ {
   position: relative;
 }
 
-#new .newSlider .slick-dots,
-#cateDivide .cateDivideSlider .slick-dots {
+#new .newSlider .slick-dots
+/* #cateDivide .cateDivideSlider .slick-dots */ {
   position: absolute;
   top: -50px;
   right: 0;
@@ -105,14 +105,14 @@ section {
   width: 130px;
 }
 
-#new .newSlider .slick-dots li,
-#cateDivide .cateDivideSlider .slick-dots li {
+#new .newSlider .slick-dots li
+/* #cateDivide .cateDivideSlider .slick-dots li */ {
   width: 11px;
   height: 11px;
 }
 
-#new .newSlider .slick-dots li button,
-#cateDivide .cateDivideSlider .slick-dots li button {
+#new .newSlider .slick-dots li button
+/* #cateDivide .cateDivideSlider .slick-dots li button */ {
   font-size: 0;
   width: 100%;
   height: 100%;
@@ -122,20 +122,64 @@ section {
   background: #d8d8d8;
 }
 
-#new .newSlider .slick-dots .slick-active button,
-#cateDivide .cateDivideSlider .slick-dots .slick-active button {
+#new .newSlider .slick-dots .slick-active button
+/* #cateDivide .cateDivideSlider .slick-dots .slick-active button */ {
   background: #2e2e2e;
 }
 
 /* cateDivide */
-#cateDivide .title h6,
+/* #cateDivide .title h6, */
 #activity .title h6 {
   font-size: var(--normal-font);
   font-weight: normal;
   margin-bottom: 20px;
 }
 
-#cateDivide .cateDivideSlider .imgBoxWrap {
+/* prdList */
+#prdList .prdListBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+#prdList .prdListBox li {
+  width: 25%;
+  padding-bottom: 70px;
+}
+
+#prdList .desc p:first-child {
+  font-size: var(--small-font);
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+#prdList .desc p:nth-child(2) {
+  font-size: var(--small-font);
+  color: var(--sec-font-color);
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+#prdList .desc span {
+  padding-right: 10px;
+  color: var(--primary-color);
+}
+
+#prdList .desc p:last-child {
+  font-size: var(--normal-font);
+  font-weight: var(--bold-font);
+}
+
+#prdList .more {
+  width: 80px;
+  height: 89px;
+  margin: 100px auto;
+  cursor: pointer;
+}
+
+#prdList .prdCount {
+  margin: 30px 0 10px;
+}
+
+/* #cateDivide .cateDivideSlider .imgBoxWrap {
   position: relative;
 }
 
@@ -147,10 +191,10 @@ section {
 
 #cateDivide .cateDivideSlider .slick-dots {
   width: 180px;
-}
+} */
 
 /* activity */
-#activity .imgDesc {
+/* #activity .imgDesc {
   margin-bottom: 70px;
   text-align: center;
   position: relative;
@@ -216,5 +260,4 @@ section {
   font-weight: 500;
   margin-bottom: 50px;
   word-break: keep-all;
-  line-height: 35px;
-}
+  line-height: 35px; }*/

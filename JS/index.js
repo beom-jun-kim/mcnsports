@@ -78,4 +78,18 @@ $(document).ready(function () {
   $topBtn.click(function () {
     $("html,body").animate({ scrollTop: 0 });
   });
+
+  $(".bestTabNavi a").click(function (e) {
+    e.preventDefault();
+  });
+
+  $(".bestTabCon > div").hide();
+  $(".bestTabNavi a")
+    .click(function () {
+      $(".bestTabCon > div").hide().filter(this.hash).stop().show();
+      $(".bestTabNavi a").removeClass("active");
+      $(this).addClass("active");
+    })
+    .filter(":eq(0)")
+    .click();
 });
